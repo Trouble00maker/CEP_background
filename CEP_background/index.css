@@ -1,0 +1,163 @@
+body,dl,dd,dt,p,h1,h2,h3,h4,h5,h6{ margin: 0;}
+ul,ol{margin: 0; list-style: none; padding: 0;}
+a{ text-decoration: none; color:inherit; }
+*{ margin: 0; padding: 0; }
+a img{ display:block; border:none;}
+.clearfix:after{ content:""; display: block; clear: both;}
+.fl-l{ float: left;}
+.fl-r{ float: right;}
+body{
+	width: 100%;
+	background: gray url(img/bg.jpg)  no-repeat top/cover fixed ;
+}
+/* ===============头部============== */
+h1{
+	margin-top: 5%;
+	text-align: center;
+	color: white;
+	font-family: "楷书";
+	/* border: 1px solid green; */
+}
+/* =================登录================ */
+
+.login{
+	display: flex;
+	width: 680px;
+	height: 600px;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 50px;
+	color: white;
+}
+label{
+	width: 60px;
+	height: 35px;
+	font-size: 18px;
+}
+.ctaBox{
+	width: 360px;
+	height:210px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 30%;
+}
+.layout{
+	width: 355px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.left{
+	width: 255px;
+	height: 35px;
+	margin-left: 20px; 
+	border: 2px solid white;
+	background: transparent;
+	border-radius: 9px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+}
+.loginBtn{
+	width: 200px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 9px;
+	color: white;
+	font-size: 18px;
+	position: relative;
+	top: 30px;
+	cursor:pointer ;
+}
+#errormessage{
+	color:yellow;
+	width: 360px;
+	height: 30px;
+	position: relative;
+	left: 30%;
+	top: 10%;
+}
+/* ==================内容============== */
+#form{
+	width: 680px;
+	height: 700px;
+	border: 2px solid white;
+	border-radius: 15px;
+	margin: 0 auto;
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 3%;
+}
+.msg_group{
+	width: 560px;
+	height: 60px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	top: 7%;
+}
+.code{
+	width: 150px;
+	height: 46px;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+}
+.code::-webkit-input-placeholder{
+	color: white;
+}
+.state{
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 50px;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: white;
+	padding-left: 50px;
+}
+.btn_group{
+	width: 250px;
+	height: 60px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	top: 3%;
+}
+#submit,#reset{
+	width: 100px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 10px;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+}
+option{
+	color: black;
+}
+.msg_log{
+	width: 630px;
+	height: 380px;
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	font-size: 16px;
+	resize: none;
+}

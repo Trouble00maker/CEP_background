@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>colocolo注册</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" media="screen" />
+	<link rel="stylesheet" href="index.css">
+	<script src="jquery-3.4.1.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="index.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<h1>colocolo注册系统</h1>
+	<div class="container">
+		<div class="login" id="login">
+			<div class="ctaBox">
+				<div class="name layout">
+					<label>用户名:</label>
+					<input type="text" name="username" class="left" id="username">
+				</div>
+				<div class="password layout">
+					<label>密码:</label>
+					<input type="password" class="left" name="password" id="password" >
+				</div>
+				<div id="errormessage"></div>
+				<button type="button" class="loginBtn" id="loginBtn" onclick="loginBtn()">登陆</button>
+			</div>
+		</div>
+
+		<div id="form">
+			<div class="msg_group">
+				<input type="text" class="code" name="code" value="" maxlength="6"  placeholder="输入激活码" id="code">
+				<select id="versionType" class="state" >
+					<option value="color" >color</option>
+					<option value="photo" >photo</option>
+					<option value="video" >video</option>
+				</select>
+				<select id="state" class="state">
+					<option value="0" >激活</option>
+					<option value="1" >销毁</option>
+					<option value="2" >查询</option>
+					<option value="3" >查询全部</option>
+
+				</select>
+			</div>
+			<div class="btn_group">
+				<input type="button"  id="submit" value="提交" onclick="submit()">
+				<input type="button"  id="reset" value="重置" onclick="reset()">
+			</div>
+			<textarea rows="100000" cols="50" name="msg_log" class="msg_log" id="msg_log" disabled="disabled"></textarea>
+	</div>
+</body>
+</html>
